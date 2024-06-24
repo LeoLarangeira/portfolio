@@ -4,6 +4,13 @@
     overflow: hidden;
 }
 
-.main{
-    padding:8rem;
+.main {
+    margin-top: 25rem; 
+    padding: .1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; /* Define a direção dos itens em coluna */
+    justify-content: flex-start; /* Alinha os itens no topo (eixo principal) */
+    align-items: center; /* Centraliza os itens no eixo transversal */
+    height: 100%;
 }
