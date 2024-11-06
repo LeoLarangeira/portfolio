@@ -7,6 +7,7 @@
   html, body {
     height: 100%;
     overflow: hidden;
+    z-index: 1; /* Camada inferior */
   }
    
   body {
@@ -22,6 +23,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    z-index: 2;
   }
    
   .inner-wrapper {
@@ -31,6 +33,7 @@
     margin: 0 auto;
     perspective: 180px;
     perspective-origin: 50% 40%;
+    z-index: 2;
   }
    
   .landscape {
@@ -44,6 +47,7 @@
     background-position: -1px -1px, -1px -1px;
     transform: rotateX(85deg);
     animation: moveUp 1s infinite linear;
+    z-index: 1; /* Camada inferior */
   }
    
  
@@ -53,21 +57,26 @@
   @keyframes moveUp{
     0% {
       background-position: -50px -50px, -1px -1px;
+      z-index: 2;
     }
     100% {
       background-position: -1px -1px, -1px -1px;
+      z-index: 2;
     }
   }
    
   @keyframes glow {
     0% {
       filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
+      z-index: 2;
     }
     50% {
       filter: drop-shadow(0 0 1px #CF33D9) drop-shadow(0 0 1px #CF33D9);
+      z-index: 2;
     }
     100% {
       filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
+      z-index: 2;
     }
   }
   
