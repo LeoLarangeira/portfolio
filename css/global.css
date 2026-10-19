@@ -1,57 +1,83 @@
-:root{
-    --ink: #001219;
-    --teal-dark: #005f73;
-    --cyan-dark: #0a9396;
-    --aqua-pearl: #94d2bd;
-    --vanilla: #e9d8a6;
-    --vanilla-light: #f6f2e9;
-    --orange-gold: #ee9b00;
-    --rust: #ae2012;
-    --white-pure: #ffffff;
+/* =========================================
+   RESET
+   ========================================= */
 
-
-    --brutal-xs: 2px 2px 0px var(--ink);
-    --brutal-sm: 3px 3px 0px var(--ink);
-    --brutal-md: 5px 5px 0px var(--ink);
-    --brutal: 4px 4px 0px var(--ink);
-    --brutal-lg: 6px 6px 0px var(--ink);
-    --brutal-xl: 8px 8px 0px var(--ink);
-
-
-    --mono: "JetBrains Mono", monospace;
-    --sans: "Space Grotesk", sans-serif;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
 
-.main {
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--vanilla-light);
+    color: var(--ink);
+
     font-family: var(--sans);
 }
 
 
-.bg-grid-tech{
-    background-size: 24px 24px;
-    background-image: 
-        linear-gradient(to right, rgba(0, 18, 25, 0.08) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(0, 18, 25, 0.08) 1px, transparent 1px);
+/* =========================================
+   ELEMENTOS GLOBAIS
+   ========================================= */
+
+a {
+    color: inherit;
 }
 
-.bg-blueprint{
-    background-color: #001219;
-    background-size: 20px 20px;
-    background-image: 
-        linear-gradient(to right, rgba(148, 210, 189, 0.12) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(148, 210, 189, 0.12) 1px, transparent 1px);
-    
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
 }
+
+
+.nav-link.active {
+    border-color: var(--ink);
+    background-color: var(--vanilla);
+    box-shadow: var(--brutal-xs);
+}
+
+
+.contact-copy-button.is-copied {
+    background-color: var(--aqua-pearl);
+}
+
+
+/* =========================================
+   COMPONENTES REUTILIZÁVEIS
+   ========================================= */
+
 .brutal-btn {
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
 }
+
+
 .brutal-btn:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0px #001219;
+
+    box-shadow: var(--brutal-lg);
 }
+
+
 .brutal-btn:active {
     transform: translate(2px, 2px);
-    box-shadow: 2px 2px 0px #001219;
+
+    box-shadow: var(--brutal-xs);
 }
