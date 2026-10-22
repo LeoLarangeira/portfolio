@@ -1,1522 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Portfólio de Leonardo Larangeira: C#, .NET, Blazor, SQL Server, ADVPL e sistemas corporativos.">
+  <meta name="theme-color" content="#001219">
+  <title>Leonardo Larangeira | Desenvolvimento & Sistemas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="icon" href="assets/hackear.png">
-  
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/variables.css">
-  
-  <title>Portifólio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="site-body">
-    
-    <div class="runtime-banner">
-        <div class="runtime-banner__left">
-            <span class="runtime-status-dot"></span>
-            <span>SYS.SPEC // INDUSTRIAL ENTERPRISE PIPELINE: RUNTIME 100% NOMINAL</span>
-            <span class="runtime-divider">|</span>
-            <span class="runtime-latency">LATÊNCIA: &lt;12ms</span>
-        </div>
-
-        <div class="runtime-banner__right">
-            <span class="runtime-build">BUILD: 2026.04-PROD</span>
-            <span class="runtime-availability">DISPONÍVEL P/ PROJETOS</span>
-        </div>
+<body>
+  <div class="topbar">
+    <div class="wrap"><span><span class="dot"></span>PORTFOLIO // LEONARDO_LARANGEIRA</span><span
+        class="right">ITATIBA/SP · BRASIL</span></div>
+  </div>
+  <header class="nav-shell">
+    <div class="wrap nav-inner"><a class="brand" href="#inicio"><span class="brand-mark">LL</span> Leonardo
+        Larangeira</a>
+      <nav aria-label="Navegação principal"><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a
+          href="#tecnologias">Tecnologias</a><a href="#experiencia">Experiência</a><a href="#contato">Contato</a></nav>
     </div>
-
-    <header class="portfolio-header">
-        <div class="header-container">
-
-            <a class="brand-link" href="#">
-                <div class="brand-mark">LL</div>
-
-                <div class="brand-text">
-                    <span class="brand-name">Leonardo Larangeira</span>
-                    <span class="brand-stack">.NET // SQL SERVER // TOTVS</span>
-                </div>
-            </a>
-
-            <nav class="desktop-nav">
-                <a class="nav-link" href="#sobre">01 // Sobre</a>
-                <a class="nav-link" href="#stack">02 // Stack</a>
-                <a class="nav-link" href="#projetos">03 // Projetos</a>
-                <a class="nav-link" href="#estudos-de-caso">04 // White Papers</a>
-                <a class="nav-link" href="#trajetoria">05 // Trajetória</a>
-                <a class="nav-link" href="#filosofia">06 // Filosofia</a>
-            </nav>
-
-            <div class="header-actions">
-                <a class="brutal-btn header-contact" href="#contato">
-                    <span class="material-symbols-outlined">terminal</span>
-                    <span>Contato</span>
-                </a>
-
-                <a class="brutal-btn header-cv" href="#" data-action="download-cv">
-                    <span class="material-symbols-outlined">description</span>
-                    <span>CV.PDF</span>
-                </a>
-            </div>
-
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">// Desenvolvimento de software & sistemas corporativos</div>
+          <h1>Leonardo<br><span>Larangeira.</span></h1>
+          <div class="subtitle">Analista de Sistemas · C#/.NET · Blazor · SQL Server</div>
+          <p class="lead">Desenvolvo aplicações e soluções que conectam sistemas, dados e processos. Minha experiência
+            passa por ERP, desenvolvimento web, relatórios e ferramentas usadas no dia a dia de operações industriais.
+          </p>
+          <div class="hero-actions"><a class="btn primary" href="#projetos">Ver projetos ↗</a><a class="btn gold"
+              href="#contato">Entrar em contato →</a></div>
+          <div class="quickfacts"><span class="tag teal">C# / .NET</span><span class="tag">T-SQL</span><span
+              class="tag">Blazor Server</span><span class="tag">ERP / ADVPL</span><span class="tag">Power BI</span>
+          </div>
         </div>
-    </header>
-
-    <main class="portfolio-main">
-
-        <section class="hero-section bg-grid-tech">
-            <div class="page-container">
-                <div class="hero-grid">
-
-                    <div class="hero-content">
-                        <div class="hero-chips">
-                            <span class="hero-chip hero-chip--dark">
-                                SYS_ENG // CORE APPLICATION ARCHITECTURE
-                            </span>
-
-                            <span class="hero-chip hero-chip--light">
-                                RELEASE: v4.8.2-PROD
-                            </span>
-
-                            <span class="hero-chip hero-chip--accent">
-                                <span class="hero-chip-dot"></span>
-                                HIGH-THROUGHPUT
-                            </span>
-                        </div>
-
-                        <div class="hero-heading">
-                            <h1 class="hero-title">
-                                Leonardo<br />
-                                <span class="hero-title-highlight">Larangeira</span>
-                            </h1>
-
-                            <div class="hero-subtitle-card">
-                                <p class="hero-subtitle">
-                                    <span class="material-symbols-outlined">deployed_code</span>
-                                    Analista de Sistemas | .NET | SQL Server | ERP &amp; Sistemas Industriais
-                                </p>
-                            </div>
-                        </div>
-
-                        <p class="hero-description">
-                            Especialista no desenvolvimento e arquitetura de aplicações corporativas robustas,
-                            integração de ecossistemas legados com plataformas modernas
-                            (<span class="inline-code">.NET / Blazor</span>),
-                            modelagem avançada em
-                            <span class="inline-code">SQL Server</span>
-                            e automação de fluxos industriais de ponta a ponta com alta fidelidade e tolerância a falhas.
-                        </p>
-
-                        <div class="hero-actions">
-                            <a class="brutal-btn hero-action hero-action--primary" href="#projetos">
-                                <span class="material-symbols-outlined">terminal</span>
-                                <span>Ver Projetos</span>
-                            </a>
-
-                            <a class="brutal-btn hero-action hero-action--light"
-                               href="https://github.com"
-                               rel="noopener noreferrer"
-                               target="_blank">
-                                <span class="material-symbols-outlined">code</span>
-                                <span>GitHub</span>
-                            </a>
-
-                            <a class="brutal-btn hero-action hero-action--aqua"
-                               href="https://linkedin.com"
-                               rel="noopener noreferrer"
-                               target="_blank">
-                                <span class="material-symbols-outlined">lan</span>
-                                <span>LinkedIn</span>
-                            </a>
-
-                            <a class="brutal-btn hero-action hero-action--accent"
-                               href="#"
-                               data-action="download-cv">
-                                <span class="material-symbols-outlined">download</span>
-                                <span>Currículo.pdf</span>
-                            </a>
-                        </div>
-
-                        <div class="hero-metrics">
-                            <article class="metric-card">
-                                <span class="metric-label">QUERY LATENCY RED.</span>
-                                <strong class="metric-value">UP TO -70%</strong>
-                                <span class="metric-detail">Indexes &amp; TempDB Fix</span>
-                            </article>
-
-                            <article class="metric-card metric-card--vanilla">
-                                <span class="metric-label">ERP INTEGRATION SLA</span>
-                                <strong class="metric-value metric-value--rust">99.98%</strong>
-                                <span class="metric-detail">Polly Retry &amp; Outbox</span>
-                            </article>
-
-                            <article class="metric-card">
-                                <span class="metric-label">ENGINE BASELINE</span>
-                                <strong class="metric-value metric-value--teal">.NET 8 / C#</strong>
-                                <span class="metric-detail">High Concurrency</span>
-                            </article>
-                        </div>
-                    </div>
-
-                    <aside class="blueprint-card bg-blueprint">
-                        <div class="blueprint-header">
-                            <div class="blueprint-header__title">
-                                <span class="blueprint-status-dot"></span>
-                                <span>[BLUEPRINT: RUNTIME TOPOLOGY]</span>
-                            </div>
-
-                            <span class="blueprint-live-badge">REAL-TIME</span>
-                        </div>
-
-                        <div class="blueprint-stack">
-
-                            <article class="blueprint-node">
-                                <div class="blueprint-node__header">
-                                    <span class="blueprint-node__title blueprint-node__title--accent">
-                                        [01] TOTVS PROTHEUS ERP
-                                    </span>
-                                    <span class="blueprint-node__meta">ADVPL / TLPP</span>
-                                </div>
-
-                                <p class="blueprint-node__description">
-                                    SX2, SX3 Model | Roteiros &amp; Faturamento
-                                </p>
-
-                                <div class="blueprint-node__footer">
-                                    <span>Queue Outbox Table</span>
-                                    <span class="blueprint-accent-text">4.2k ops/min</span>
-                                </div>
-                            </article>
-
-                            <div class="blueprint-connector">
-                                <span>|</span>
-                                <span class="blueprint-connector__label">DATA SYNC PIPELINE (REST/JSON)</span>
-                                <span>▼</span>
-                            </div>
-
-                            <article class="blueprint-node">
-                                <div class="blueprint-node__header">
-                                    <span class="blueprint-node__title">[02] REST API CORE // C# .NET 8</span>
-                                    <span class="blueprint-accent-text">PORT: 5001</span>
-                                </div>
-
-                                <p class="blueprint-node__description">
-                                    Dapper Micro-ORM | Background Tasks | WebSockets
-                                </p>
-
-                                <div class="blueprint-node__footer">
-                                    <span>Auth: JWT Entra ID</span>
-                                    <span class="blueprint-tag">RTT: &lt;12ms</span>
-                                </div>
-                            </article>
-
-                            <div class="blueprint-connector">
-                                <span>|</span>
-                                <span class="blueprint-connector__label">SET-BASED T-SQL ENGINE</span>
-                                <span>▼</span>
-                            </div>
-
-                            <article class="blueprint-node">
-                                <div class="blueprint-node__header">
-                                    <span class="blueprint-node__title blueprint-node__title--aqua">
-                                        [03] SQL SERVER CLUSTERED ENGINE
-                                    </span>
-                                    <span class="blueprint-node__meta">T-SQL 2022</span>
-                                </div>
-
-                                <p class="blueprint-node__description">
-                                    Partitioned Tables | Stored Procedures | CTE Windowing
-                                </p>
-
-                                <div class="blueprint-node__footer">
-                                    <span>Heap: Zero Scan</span>
-                                    <span class="blueprint-accent-text">Lock Esc: Clean (Snapshot)</span>
-                                </div>
-                            </article>
-
-                            <div class="blueprint-connector">
-                                <span>|</span>
-                                <span class="blueprint-connector__label">EDGE INDUSTRIAL DISPATCH</span>
-                                <span>▼</span>
-                            </div>
-
-                            <article class="blueprint-node">
-                                <div class="blueprint-node__header">
-                                    <span class="blueprint-node__title blueprint-node__title--accent">
-                                        [04] CHÃO DE FÁBRICA // BLAZOR WASM
-                                    </span>
-                                    <span class="blueprint-node__meta">TOUCH TERMINAL</span>
-                                </div>
-
-                                <p class="blueprint-node__description">
-                                    Apontamentos PCP | Rastreabilidade Lotes | OEE Dinâmico
-                                </p>
-
-                                <div class="blueprint-node__footer">
-                                    <span>Offline Resilience: Sync</span>
-                                    <span class="blueprint-tag blueprint-tag--accent">SYNC: 100% OK</span>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="blueprint-footer">
-                            <span>STATUS: ALL CORES ACTIVE</span>
-                            <span class="blueprint-tag">PACKET LOSS: 0.00%</span>
-                        </div>
-                    </aside>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section content-section--light" id="sobre">
-            <div class="page-container section-stack">
-
-                <header class="section-heading">
-                    <div class="section-kicker">
-                        <span class="section-code">SEC_01</span>
-                        <span class="section-label">// VISÃO DE ENGENHARIA</span>
-                    </div>
-
-                    <h2 class="section-title">Sobre Mim &amp; Trajetória Sistêmica</h2>
-                    <div class="section-rule section-rule--accent"></div>
-
-                    <p class="section-description section-description--wide">
-                        Atuo na interseção entre a alta tecnologia de software e a realidade dura do chão de fábrica
-                        e das corporações industriais. Compreendo que software eficiente não é medido por modismos
-                        de desenvolvimento, mas por acurácia fiscal, produtividade de linha, ausência de downtime
-                        e conformidade regulatória.
-                    </p>
-                </header>
-
-                <div class="career-steps">
-                    <article class="career-step">
-                        <div>
-                            <div class="career-step__header">
-                                <span class="career-step__number">ETAPA 01</span>
-                                <span class="career-step__category">FUNDAÇÃO</span>
-                            </div>
-
-                            <h3>Dev &amp; Fundamentos</h3>
-
-                            <p>
-                                Construção de base sólida em algoritmos, tipagem estrita, manipulação de arquivos
-                                relacionais e automações pragmáticas de código backend.
-                            </p>
-                        </div>
-
-                        <footer class="career-step__footer">
-                            <span>Lógica • C# • Scripts</span>
-                        </footer>
-                    </article>
-
-                    <article class="career-step">
-                        <div>
-                            <div class="career-step__header">
-                                <span class="career-step__number">ETAPA 02</span>
-                                <span class="career-step__category">ERP CRÍTICO</span>
-                            </div>
-
-                            <h3>Suporte &amp; ERP</h3>
-
-                            <p>
-                                Imersão total no ecossistema TOTVS Protheus, resolução de incidentes críticos,
-                                parametrização operacional e suporte a usuários corporativos sob alta pressão de produção.
-                            </p>
-                        </div>
-
-                        <footer class="career-step__footer">
-                            <span>Sustentação • ADVPL • SLAs</span>
-                        </footer>
-                    </article>
-
-                    <article class="career-step">
-                        <div>
-                            <div class="career-step__header">
-                                <span class="career-step__number">ETAPA 03</span>
-                                <span class="career-step__category">PROCESSOS</span>
-                            </div>
-
-                            <h3>Analista de Sistemas</h3>
-
-                            <p>
-                                Mapeamento de rotinas operacionais, especificação funcional, identificação de gargalos
-                                de processos no PCP e intermediação entre requisitos de negócio e execução técnica.
-                            </p>
-                        </div>
-
-                        <footer class="career-step__footer">
-                            <span>Requisitos • Processos • PCP</span>
-                        </footer>
-                    </article>
-
-                    <article class="career-step career-step--current">
-                        <div>
-                            <div class="career-step__header">
-                                <span class="career-step__number career-step__number--current">
-                                    ETAPA 04 [ATUAL]
-                                </span>
-                                <span class="career-step__category career-step__category--current">
-                                    ENG. TOTAL
-                                </span>
-                            </div>
-
-                            <h3>Dev &amp; Arquitetura</h3>
-
-                            <p>
-                                Desenvolvimento e desenho de soluções escaláveis, orquestração de bancos relacionais
-                                com milhões de linhas, tuning de queries e portais industriais modernos em Blazor.
-                            </p>
-                        </div>
-
-                        <footer class="career-step__footer">
-                            <span>.NET 8 • Tuning SQL • APIs</span>
-                        </footer>
-                    </article>
-                </div>
-
-                <section class="domains-panel">
-                    <div class="domains-panel__header">
-                        <span>// DOMÍNIOS DE NEGÓCIO ATENDIDOS REGULARMENTE</span>
-                        <span class="domains-panel__tag">INDUSTRIAL SPECS</span>
-                    </div>
-
-                    <div class="domains-grid">
-                        <article class="domain-card">
-                            <strong class="domain-card__title domain-card__title--rust">PCP</strong>
-                            <span>Controle da Produção, OPs e Carga Máquina</span>
-                        </article>
-
-                        <article class="domain-card">
-                            <strong class="domain-card__title domain-card__title--teal">MANUFATURA</strong>
-                            <span>Apontamentos de Posto, Refugos e Paradas</span>
-                        </article>
-
-                        <article class="domain-card">
-                            <strong class="domain-card__title">ENG. PRODUTO</strong>
-                            <span>Estruturas (BOM), Roteiros e Revisão</span>
-                        </article>
-
-                        <article class="domain-card">
-                            <strong class="domain-card__title domain-card__title--teal">FATURAMENTO</strong>
-                            <span>Vendas, Liberação de Pedidos e Expedição</span>
-                        </article>
-
-                        <article class="domain-card">
-                            <strong class="domain-card__title domain-card__title--rust">FISCAL</strong>
-                            <span>ICMS, IPI, PIS/COFINS e Validação Fiscal</span>
-                        </article>
-
-                        <article class="domain-card">
-                            <strong class="domain-card__title">QUALIDADE</strong>
-                            <span>Rastreabilidade ISO 9001, Laudos e Inspeção</span>
-                        </article>
-                    </div>
-                </section>
-
-            </div>
-        </section>
-
-        <section class="content-section content-section--vanilla" id="stack">
-            <div class="page-container section-stack">
-
-                <header class="section-heading">
-                    <div class="section-kicker">
-                        <span class="section-code">SEC_02</span>
-                        <span class="section-label">// STACK DE PRODUÇÃO</span>
-                    </div>
-
-                    <h2 class="section-title">Especificação de Tecnologias &amp; Ferramentas</h2>
-                    <div class="section-rule section-rule--rust"></div>
-
-                    <p class="section-description">
-                        Seleção técnica orientada à estabilidade corporativa, latência mínima, tipagem estrita
-                        e interoperabilidade com ecossistemas industriais pré-existentes.
-                    </p>
-                </header>
-
-                <div class="stack-grid">
-
-                    <article class="stack-card">
-                        <header class="stack-card__header stack-card__header--teal">
-                            <span>MODULE: BACKEND</span>
-                            <span class="material-symbols-outlined">dns</span>
-                        </header>
-
-                        <div class="stack-card__body">
-                            <h3>Core &amp; APIs Resilientes</h3>
-                            <p>
-                                Arquitetura de microsserviços e monolitos modulares orientados a domínio (DDD)
-                                com injeção de dependência e alta vazão.
-                            </p>
-
-                            <div class="technology-tags">
-                                <span class="tech-tag tech-tag--vanilla">C# (.NET 8)</span>
-                                <span class="tech-tag">ASP.NET Core Web API</span>
-                                <span class="tech-tag tech-tag--aqua">Blazor (Server/WASM)</span>
-                                <span class="tech-tag">Dapper ORM</span>
-                                <span class="tech-tag">Entity Framework Core</span>
-                                <span class="tech-tag">Python Scripting</span>
-                            </div>
-                        </div>
-
-                        <footer class="stack-card__footer">
-                            <span>STATUS: ACTIVE</span>
-                            <strong>COMPILED RELEASE</strong>
-                        </footer>
-                    </article>
-
-                    <article class="stack-card">
-                        <header class="stack-card__header stack-card__header--dark">
-                            <span>MODULE: DATABASE</span>
-                            <span class="material-symbols-outlined">database</span>
-                        </header>
-
-                        <div class="stack-card__body">
-                            <h3>Engenharia de Dados Relacional</h3>
-                            <p>
-                                Estruturação e ajuste fino em tabelas de alto volume transacional,
-                                análise profunda de planos de execução e isolamento de locks.
-                            </p>
-
-                            <div class="technology-tags">
-                                <span class="tech-tag tech-tag--accent">SQL Server</span>
-                                <span class="tech-tag">T-SQL Avançado</span>
-                                <span class="tech-tag tech-tag--vanilla">Stored Procedures &amp; CTEs</span>
-                                <span class="tech-tag">Tuning &amp; Planos Execução</span>
-                                <span class="tech-tag">Index Fragmentation</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                            </div>
-                        </div>
-
-                        <footer class="stack-card__footer">
-                            <span>ENGINE: CLUSTERED</span>
-                            <strong class="stack-card__footer--rust">ZERO KEY LOOKUP</strong>
-                        </footer>
-                    </article>
-
-                    <article class="stack-card">
-                        <header class="stack-card__header stack-card__header--accent">
-                            <span>MODULE: ERP &amp; LEGACY</span>
-                            <span class="material-symbols-outlined">developer_board</span>
-                        </header>
-
-                        <div class="stack-card__body">
-                            <h3>Ecossistema TOTVS Protheus</h3>
-                            <p>
-                                Especialização na base de dados de dicionário (SX2/SX3/SIX),
-                                arquitetura MVC no ADVPL e integração segura com serviços externos.
-                            </p>
-
-                            <div class="technology-tags">
-                                <span class="tech-tag tech-tag--rust">ADVPL / TLPP</span>
-                                <span class="tech-tag">Arquitetura MVC Protheus</span>
-                                <span class="tech-tag tech-tag--vanilla">Pontos de Entrada (PE)</span>
-                                <span class="tech-tag">Dicionário de Dados (SX3)</span>
-                                <span class="tech-tag">Protheus REST APIs</span>
-                                <span class="tech-tag">Webhooks Operacionais</span>
-                            </div>
-                        </div>
-
-                        <footer class="stack-card__footer">
-                            <span>PROTHEUS 12</span>
-                            <strong>RELEASE INDEPENDENT</strong>
-                        </footer>
-                    </article>
-
-                    <article class="stack-card">
-                        <header class="stack-card__header stack-card__header--cyan">
-                            <span>MODULE: ANALYTICS</span>
-                            <span class="material-symbols-outlined">query_stats</span>
-                        </header>
-
-                        <div class="stack-card__body">
-                            <h3>Extração &amp; Inteligência</h3>
-                            <p>
-                                Modelagem dimensional analítica para suporte executivo,
-                                dashboards de linha de montagem e relatórios transacionais de precisão.
-                            </p>
-
-                            <div class="technology-tags">
-                                <span class="tech-tag tech-tag--vanilla">Power BI (DAX / Tabular)</span>
-                                <span class="tech-tag">Modelagem Estrela (Star Schema)</span>
-                                <span class="tech-tag">Crystal Reports Legado</span>
-                                <span class="tech-tag">Power Query (M)</span>
-                                <span class="tech-tag tech-tag--aqua">Pipelines ETL Fabris</span>
-                            </div>
-                        </div>
-
-                        <footer class="stack-card__footer">
-                            <span>REFRESH: SUB-MINUTE</span>
-                            <strong>HIGH ACCURACY</strong>
-                        </footer>
-                    </article>
-
-                    <article class="stack-card stack-card--wide">
-                        <header class="stack-card__header stack-card__header--dark">
-                            <span>MODULE: INFRA &amp; GOVERNANCE</span>
-                            <span class="material-symbols-outlined">cloud_sync</span>
-                        </header>
-
-                        <div class="stack-card__body">
-                            <h3>Ambientes Corporativos &amp; Governança</h3>
-                            <p>
-                                Deploy local e em nuvem, controle de versões de código sob esteira segura
-                                e gestão de identidade corporativa integrada.
-                            </p>
-
-                            <div class="technology-tags">
-                                <span class="tech-tag tech-tag--teal">Git / GitHub Enterprise</span>
-                                <span class="tech-tag">IIS (Windows Server)</span>
-                                <span class="tech-tag">Postman Automation</span>
-                                <span class="tech-tag tech-tag--accent">Microsoft Entra ID / Azure AD</span>
-                                <span class="tech-tag">Active Directory LDAP</span>
-                                <span class="tech-tag">AWS (EC2 / S3 / RDS)</span>
-                            </div>
-                        </div>
-
-                        <footer class="stack-card__footer">
-                            <span>GOVERNANÇA: RBAC STRICT ACCESS</span>
-                            <strong class="stack-card__footer--rust">CI/CD: READY</strong>
-                        </footer>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section content-section--light" id="projetos">
-            <div class="page-container section-stack">
-
-                <header class="section-heading">
-                    <div class="section-kicker">
-                        <span class="section-code">SEC_03</span>
-                        <span class="section-label">// ENGENHARIA APLICADA</span>
-                    </div>
-
-                    <h2 class="section-title">Projetos em Destaque &amp; Casos Reais</h2>
-                    <div class="section-rule section-rule--accent"></div>
-
-                    <p class="section-description">
-                        Sistemas implementados em ambientes de alta criticidade industrial,
-                        com ênfase nas decisões de arquitetura e impacto palpável em eficiência operacional.
-                    </p>
-                </header>
-
-                <div class="projects-grid">
-
-                    <article class="project-card">
-                        <header class="project-card__header">
-                            <span class="project-id project-id--aqua">CASE ID: PRJ-01</span>
-                            <span class="project-category project-category--teal">PRODUÇÃO INDUSTRIAL</span>
-                        </header>
-
-                        <div class="project-card__body">
-                            <h3>Factory Operations Portal</h3>
-
-                            <div class="project-context-grid">
-                                <div>
-                                    <span class="project-context-title project-context-title--problem">
-                                        PROBLEMA ENFRENTADO:
-                                    </span>
-                                    <p>
-                                        Sistemas legados descentralizados geravam desfasagem de até 2 horas
-                                        entre o apontamento no chão de fábrica e a visualização pelo PCP corporativo.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <span class="project-context-title project-context-title--context">
-                                        CONTEXTO:
-                                    </span>
-                                    <p>
-                                        Planta de manufatura seriada com 14 linhas de montagem concorrentes
-                                        operando em 3 turnos ininterruptos.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="project-solution">
-                                <strong>Solução &amp; Decisão Técnica:</strong>
-                                <p>
-                                    Desenvolvimento de plataforma unificada em
-                                    <span class="inline-code">Blazor WebAssembly</span>
-                                    consumindo Web API em C# .NET. Adoção mandatória do micro-ORM
-                                    <strong>Dapper</strong>
-                                    para queries de leitura crítica, eliminando overhead do EF Core,
-                                    e canais de WebSockets para broadcast instantâneo de status das esteiras.
-                                </p>
-                            </div>
-
-                            <div class="technology-tags technology-tags--compact">
-                                <span class="tech-tag tech-tag--dark">C#</span>
-                                <span class="tech-tag">Blazor WASM</span>
-                                <span class="tech-tag">.NET Web API</span>
-                                <span class="tech-tag">SQL Server</span>
-                                <span class="tech-tag tech-tag--aqua">Dapper</span>
-                            </div>
-                        </div>
-
-                        <footer class="project-result project-result--accent">
-                            <span>RESULTADO OBTIDO:</span>
-                            <strong>-35% TEMPO RESPOSTA A GARGALOS</strong>
-                        </footer>
-                    </article>
-
-                    <article class="project-card">
-                        <header class="project-card__header">
-                            <span class="project-id project-id--accent">CASE ID: PRJ-02</span>
-                            <span class="project-category project-category--rust">TELEMETRIA &amp; OEE</span>
-                        </header>
-
-                        <div class="project-card__body">
-                            <h3>Production Dashboard Real-Time</h3>
-
-                            <div class="project-context-grid">
-                                <div>
-                                    <span class="project-context-title project-context-title--problem">
-                                        PROBLEMA ENFRENTADO:
-                                    </span>
-                                    <p>
-                                        Ausência de indicadores instantâneos de paradas mecânicas e desvio
-                                        de meta horária em telas operacionais de linha.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <span class="project-context-title project-context-title--context">
-                                        CONTEXTO:
-                                    </span>
-                                    <p>
-                                        Terminais industriais touchscreen instalados diretamente
-                                        sobre as bancadas de produção fabril.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="project-solution">
-                                <strong>Solução &amp; Decisão Técnica:</strong>
-                                <p>
-                                    Construção de dashboard industrial em
-                                    <span class="inline-code">Blazor Server com SignalR Hubs</span>.
-                                    No SQL Server, criação de índices clusterizados alinhados a particionamento temporal
-                                    das marcações de ciclo, garantindo que agregação de OEE e disponibilidade de máquina
-                                    custe menos de 80ms por scan.
-                                </p>
-                            </div>
-
-                            <div class="technology-tags technology-tags--compact">
-                                <span class="tech-tag tech-tag--dark">Blazor Server</span>
-                                <span class="tech-tag">SignalR</span>
-                                <span class="tech-tag">SQL Clustered Index</span>
-                                <span class="tech-tag tech-tag--vanilla">OEE Analytics</span>
-                            </div>
-                        </div>
-
-                        <footer class="project-result project-result--aqua">
-                            <span>RESULTADO OBTIDO:</span>
-                            <strong>EXTINÇÃO TOTAL DE PLANILHAS PAPEL</strong>
-                        </footer>
-                    </article>
-
-                    <article class="project-card">
-                        <header class="project-card__header">
-                            <span class="project-id project-id--aqua">CASE ID: PRJ-03</span>
-                            <span class="project-category project-category--teal">DATABASE TUNING</span>
-                        </header>
-
-                        <div class="project-card__body">
-                            <h3>SQL Server Performance Lab</h3>
-
-                            <div class="project-context-grid">
-                                <div>
-                                    <span class="project-context-title project-context-title--problem">
-                                        PROBLEMA ENFRENTADO:
-                                    </span>
-                                    <p>
-                                        Rotinas noturnas de fechamento contábil e planejamento de estoque
-                                        ultrapassando a janela de manutenção de 5 horas.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <span class="project-context-title project-context-title--context">
-                                        CONTEXTO:
-                                    </span>
-                                    <p>
-                                        Instância SQL Server com tabelas de movimentação de estoque
-                                        contendo mais de 18 milhões de registros.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="project-solution">
-                                <strong>Solução &amp; Decisão Técnica:</strong>
-                                <p>
-                                    Análise com <span class="inline-code">Extended Events e DMVs</span>
-                                    (sys.dm_exec_query_stats). Remoção sistemática de Key Lookups através de índices
-                                    cobertos, reescrita de subconsultas correlacionadas em CTEs determinísticas
-                                    e eliminação de cursores linha-a-linha.
-                                </p>
-                            </div>
-
-                            <div class="technology-tags technology-tags--compact">
-                                <span class="tech-tag tech-tag--dark">T-SQL Tuning</span>
-                                <span class="tech-tag">Extended Events</span>
-                                <span class="tech-tag">Execution Plans</span>
-                                <span class="tech-tag tech-tag--accent">Covering Indexes</span>
-                            </div>
-                        </div>
-
-                        <footer class="project-result project-result--accent">
-                            <span>RESULTADO OBTIDO:</span>
-                            <strong>+70% VELOCIDADE NAS ROTINAS</strong>
-                        </footer>
-                    </article>
-
-                    <article class="project-card">
-                        <header class="project-card__header">
-                            <span class="project-id project-id--accent">CASE ID: PRJ-04</span>
-                            <span class="project-category project-category--dark">ALGORITMOS T-SQL</span>
-                        </header>
-
-                        <div class="project-card__body">
-                            <h3>Production Planning Engine</h3>
-
-                            <div class="project-context-grid">
-                                <div>
-                                    <span class="project-context-title project-context-title--problem">
-                                        PROBLEMA ENFRENTADO:
-                                    </span>
-                                    <p>
-                                        Cálculo de alocação de postos de trabalho concorrentes gerava deadlocks
-                                        frequentes nas rotinas normais do ERP.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <span class="project-context-title project-context-title--context">
-                                        CONTEXTO:
-                                    </span>
-                                    <p>
-                                        Indústria com roteiros operacionais dinâmicos
-                                        e regras de precedência temporal de ferramentas.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="project-solution">
-                                <strong>Solução &amp; Decisão Técnica:</strong>
-                                <p>
-                                    Estruturação de algoritmos em Stored Procedures isoladas utilizando
-                                    <span class="inline-code">LEAD, LAG e DENSE_RANK()</span>
-                                    sobre tabelas temporárias devidamente indexadas em TempDB,
-                                    eliminando cursores imperativos e garantindo controle transacional
-                                    com nível de isolamento Snapshot.
-                                </p>
-                            </div>
-
-                            <div class="technology-tags technology-tags--compact">
-                                <span class="tech-tag tech-tag--dark">Window Functions</span>
-                                <span class="tech-tag">Deadlock Immunity</span>
-                                <span class="tech-tag">Snapshot Isolation</span>
-                                <span class="tech-tag tech-tag--aqua">PCP Engine</span>
-                            </div>
-                        </div>
-
-                        <footer class="project-result project-result--teal">
-                            <span>RESULTADO OBTIDO:</span>
-                            <strong>PREVISÃO PRECISA DE LEAD TIME</strong>
-                        </footer>
-                    </article>
-
-                    <article class="project-card">
-                        <header class="project-card__header">
-                            <span class="project-id project-id--aqua">CASE ID: PRJ-05</span>
-                            <span class="project-category project-category--rust">ARQUITETURA ERP</span>
-                        </header>
-
-                        <div class="project-card__body">
-                            <h3>Protheus ADVPL Lab &amp; Custom MVC</h3>
-
-                            <div class="project-context-grid">
-                                <div>
-                                    <span class="project-context-title project-context-title--problem">
-                                        PROBLEMA ENFRENTADO:
-                                    </span>
-                                    <p>
-                                        Customizações herdadas em código procedural desestruturado
-                                        que quebravam a cada atualização de pacote/release da TOTVS.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <span class="project-context-title project-context-title--context">
-                                        CONTEXTO:
-                                    </span>
-                                    <p>
-                                        Módulos de Faturamento (SIGAFAT), Compras (SIGACOM)
-                                        e Estoque (SIGAEST).
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="project-solution">
-                                <strong>Solução &amp; Decisão Técnica:</strong>
-                                <p>
-                                    Refatoração integral para o padrão oficial
-                                    <span class="inline-code">FWMBrowse / MPFormModel (MVC ADVPL)</span>.
-                                    Segregação rigorosa de regras de integridade de dados no Model,
-                                    desacoplamento da View e fornecimento de endpoints REST nativos.
-                                </p>
-                            </div>
-
-                            <div class="technology-tags technology-tags--compact">
-                                <span class="tech-tag tech-tag--dark">ADVPL MVC</span>
-                                <span class="tech-tag">TOTVS Dev Studio</span>
-                                <span class="tech-tag">REST Native Endpoints</span>
-                                <span class="tech-tag tech-tag--accent">SX2 / SX3 DataDict</span>
-                            </div>
-                        </div>
-
-                        <footer class="project-result project-result--accent">
-                            <span>RESULTADO OBTIDO:</span>
-                            <strong>100% BLINDAGEM CONTRA UPGRADE ISSUES</strong>
-                        </footer>
-                    </article>
-
-                    <article class="project-card">
-                        <header class="project-card__header">
-                            <span class="project-id project-id--accent">CASE ID: PRJ-06</span>
-                            <span class="project-category project-category--teal">QUALIDADE &amp; COMPLIANCE</span>
-                        </header>
-
-                        <div class="project-card__body">
-                            <h3>Traceability &amp; Certificate System</h3>
-
-                            <div class="project-context-grid">
-                                <div>
-                                    <span class="project-context-title project-context-title--problem">
-                                        PROBLEMA ENFRENTADO:
-                                    </span>
-                                    <p>
-                                        Geração manual de laudos técnicos de qualidade por produto gerava
-                                        morosidade de 20 minutos por lote e risco de erro em auditorias ISO.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <span class="project-context-title project-context-title--context">
-                                        CONTEXTO:
-                                    </span>
-                                    <p>
-                                        Empresa exportadora sujeita a rígidas auditorias internacionais
-                                        de rastreabilidade lote a lote.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="project-solution">
-                                <strong>Solução &amp; Decisão Técnica:</strong>
-                                <p>
-                                    Aplicação corporativa em
-                                    <span class="inline-code">ASP.NET Core / Blazor</span>
-                                    integrada ao Active Directory empresarial. Implementação de pipeline com QuestPDF
-                                    para compilação em memória de certificados com carimbo criptográfico SHA-256
-                                    e QR Code público de autenticidade instantânea.
-                                </p>
-                            </div>
-
-                            <div class="technology-tags technology-tags--compact">
-                                <span class="tech-tag tech-tag--dark">ASP.NET Core</span>
-                                <span class="tech-tag">QuestPDF / Stream</span>
-                                <span class="tech-tag">Active Directory RBAC</span>
-                                <span class="tech-tag tech-tag--aqua">SHA-256 QR Auth</span>
-                            </div>
-                        </div>
-
-                        <footer class="project-result project-result--rust">
-                            <span>RESULTADO OBTIDO:</span>
-                            <strong>DE 20 MINUTOS PARA 3 SEGUNDOS</strong>
-                        </footer>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section content-section--vanilla" id="estudos-de-caso">
-            <div class="page-container section-stack">
-
-                <header class="section-heading">
-                    <div class="section-kicker">
-                        <span class="section-code">SEC_04</span>
-                        <span class="section-label">// WHITE PAPERS &amp; NOTAS DE ENGENHARIA</span>
-                    </div>
-
-                    <h2 class="section-title">Engineering Notes &amp; Decisões Arquiteturais</h2>
-                    <div class="section-rule section-rule--rust"></div>
-
-                    <p class="section-description">
-                        Documentação técnica detalhada sobre otimizações críticas de banco de dados,
-                        resolução de cenários concorrentes e padrões corporativos.
-                    </p>
-                </header>
-
-                <div class="notes-stack">
-
-                    <article class="engineering-note">
-                        <header class="engineering-note__header">
-                            <span class="engineering-note__type engineering-note__type--rust">
-                                SQL OPTIMIZATION NOTE // REF: OPT-882
-                            </span>
-
-                            <span class="engineering-note__metric">
-                                LATÊNCIA: 45s → 180ms
-                            </span>
-                        </header>
-
-                        <h3>
-                            Como otimizar uma consulta SQL utilizada em planejamento de produção:
-                            De 45s para 180ms eliminando Implicit Conversions e Index Scans
-                        </h3>
-
-                        <p>
-                            Investigação em rotina de cálculo de explosão de materiais onde uma cláusula WHERE
-                            comparava uma coluna VARCHAR com um parâmetro NVARCHAR oriundo da aplicação C#.
-                            A discrepância causava CONVERT_IMPLICIT forçando Index Scan integral.
-                        </p>
-
-                        <pre class="code-panel"><code>CREATE NONCLUSTERED INDEX IX_SB2_SALDO_REAL
-ON dbo.SB2010 (B2_FILIAL, B2_COD)
-INCLUDE (B2_QATU, B2_RESERVA)
-WHERE D_E_L_E_T_ = '';
-
-parameters.Add("@Cod", prodId, DbType.AnsiString, size: 15);</code></pre>
-
-                        <div class="note-tags">
-                            <span>Diagnóstico: Execution Plan XML</span>
-                            <span>IO Reads: Redução de 248.000 para 412 páginas</span>
-                            <span class="note-tag--aqua">Zero TempDB Spills</span>
-                        </div>
-                    </article>
-
-                    <article class="engineering-note">
-                        <header class="engineering-note__header">
-                            <span class="engineering-note__type engineering-note__type--teal">
-                                T-SQL ARCHITECTURE // REF: WND-404
-                            </span>
-
-                            <span class="engineering-note__metric engineering-note__metric--aqua">
-                                STATUS: DETERMINÍSTICO
-                            </span>
-                        </header>
-
-                        <h3>
-                            Seleção do melhor roteiro de fabricação usando Window Functions:
-                            Resolvendo dependências temporais sem cursores
-                        </h3>
-
-                        <p>
-                            Rotinas que utilizam loops WHILE ou cursores para validar sobreposição de tempos entre
-                            operações de usinagem e montagem criam travamentos no tempdb. Ao substituir cursores por
-                            <code class="inline-code">LAG() OVER(PARTITION BY Operacao ORDER BY Inicio)</code>,
-                            o SQL Server processa todos os intervalos em passagem única em memória.
-                        </p>
-
-                        <pre class="code-panel"><code>WITH RoteiroSequenciado AS (
-    SELECT
-        OP_ID,
-        PostoTrabalho,
-        DtInicio,
-        DtFim,
-        LAG(DtFim) OVER (
-            PARTITION BY PostoTrabalho
-            ORDER BY DtInicio
-        ) AS OperacaoAnteriorFim
-    FROM dbo.ApontamentoProducao
-)
-SELECT
-    OP_ID,
-    DATEDIFF(MINUTE, OperacaoAnteriorFim, DtInicio) AS IntervaloOcioso
-FROM RoteiroSequenciado;</code></pre>
-                    </article>
-
-                    <div class="note-grid">
-
-                        <article class="mini-note">
-                            <div>
-                                <span class="mini-note__badge mini-note__badge--dark">
-                                    SECURITY &amp; IDENTITY // REF: AD-SEC-01
-                                </span>
-
-                                <h4>Estruturando permissões e RBAC em Blazor com Active Directory</h4>
-
-                                <p>
-                                    Implementação de AuthenticationStateProvider customizado para Blazor WebAssembly
-                                    com sincronização de claims oriundas dos grupos de segurança do Windows Active Directory.
-                                </p>
-                            </div>
-
-                            <footer>AUTH: ACTIVE DIRECTORY RBAC</footer>
-                        </article>
-
-                        <article class="mini-note">
-                            <div>
-                                <span class="mini-note__badge mini-note__badge--teal">
-                                    INTEGRATION // PROTHEUS
-                                </span>
-
-                                <h4>Integração resiliente entre ERP Protheus e aplicações externas: Filas Outbox</h4>
-
-                                <p>
-                                    Implementação de padrão Outbox Table dentro do SQL Server do Protheus.
-                                    Em vez de chamadas síncronas HTTP durante a gravação de notas fiscais,
-                                    gatilhos gravam em fila intermediária consumida por serviço .NET em background.
-                                </p>
-                            </div>
-
-                            <footer>PATTERN: TRANSACTIONAL OUTBOX</footer>
-                        </article>
-
-                        <article class="mini-note">
-                            <div>
-                                <span class="mini-note__badge mini-note__badge--rust">
-                                    ADVPL ARCHITECTURE // TOTVS
-                                </span>
-
-                                <h4>Desenvolvimento MVC moderno em ADVPL: Boas práticas de extensibilidade</h4>
-
-                                <p>
-                                    Separação estrutural entre MPFormModel e FWFormView garantindo reutilização
-                                    de regras em rotinas de tela e importadores batch automáticos.
-                                </p>
-                            </div>
-
-                            <footer>FRAMEWORK: MPFORMMODEL MVC</footer>
-                        </article>
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="content-section content-section--light" id="trajetoria">
-            <div class="page-container section-stack">
-
-                <header class="section-heading">
-                    <div class="section-kicker">
-                        <span class="section-code">SEC_05</span>
-                        <span class="section-label">// HISTÓRICO PROFISSIONAL</span>
-                    </div>
-
-                    <h2 class="section-title">Trajetória &amp; Atuação em Ambientes Críticos</h2>
-                    <div class="section-rule section-rule--accent"></div>
-
-                    <p class="section-description">
-                        Evolução consolidada desde a sustentação e suporte no núcleo operacional
-                        até a análise de sistemas e engenharia de soluções integradas.
-                    </p>
-                </header>
-
-                <div class="timeline">
-
-                    <article class="timeline-item">
-                        <span class="timeline-marker timeline-marker--accent"></span>
-
-                        <div class="timeline-card">
-                            <header class="timeline-card__header">
-                                <div class="timeline-card__title">
-                                    <span class="timeline-period timeline-period--dark">
-                                        2026 — PRESENTE
-                                    </span>
-
-                                    <h3>Analista de Sistemas Júnior</h3>
-                                </div>
-
-                                <span class="timeline-category timeline-category--teal">
-                                    ENG. DE SISTEMAS INDUSTRIAIS
-                                </span>
-                            </header>
-
-                            <p>
-                                Responsável pelo levantamento de requisitos de sistemas de manufatura e gestão,
-                                desenho de soluções técnicas entre o ERP TOTVS Protheus e portais internos
-                                desenvolvidos em .NET 8 / Blazor, modelagem e otimização avançada de queries SQL Server
-                                e suporte estratégico de segundo nível aos departamentos de Produção, PCP e Fiscal.
-                            </p>
-
-                            <div class="timeline-tags">
-                                <span>• Arquitetura de Integração</span>
-                                <span>• Otimização de Stored Procedures</span>
-                                <span>• Especificação de Requisitos PCP</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="timeline-item">
-                        <span class="timeline-marker timeline-marker--aqua"></span>
-
-                        <div class="timeline-card">
-                            <header class="timeline-card__header">
-                                <div class="timeline-card__title">
-                                    <span class="timeline-period">
-                                        2025 — 2026
-                                    </span>
-
-                                    <h3>Auxiliar de Suporte Júnior</h3>
-                                </div>
-
-                                <span class="timeline-category">
-                                    SUSTENTAÇÃO CORPORATIVA &amp; ERP
-                                </span>
-                            </header>
-
-                            <p>
-                                Atuação direta na sustentação e atendimento a usuários dos sistemas de gestão corporativa.
-                                Criação de rotinas e scripts corretivos em SQL, parametrização de dicionário de dados
-                                no Protheus, diagnóstico de falhas em pontos de entrada e homologação de novos fluxos.
-                            </p>
-
-                            <div class="timeline-tags">
-                                <span>• Triage de Chamados Críticos</span>
-                                <span>• Scripts de Correção T-SQL</span>
-                                <span>• Parametrização SX3/SIX</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="timeline-item">
-                        <span class="timeline-marker timeline-marker--vanilla"></span>
-
-                        <div class="timeline-card">
-                            <header class="timeline-card__header">
-                                <div class="timeline-card__title">
-                                    <span class="timeline-period">
-                                        2023 — 2024
-                                    </span>
-
-                                    <h3>Desenvolvedor Júnior / Autônomo</h3>
-                                </div>
-
-                                <span class="timeline-category">
-                                    DEV &amp; SCRIPTS
-                                </span>
-                            </header>
-
-                            <p>
-                                Construção de aplicações desktop e backend em C#, automação de tarefas repetitivas
-                                via scripts utilitários, elaboração de consultas relacionais para extração de dados
-                                gerenciais e entrega de pequenos sistemas sob medida.
-                            </p>
-
-                            <div class="timeline-tags">
-                                <span>• C# • .NET</span>
-                                <span>• SQL Server Modelagem</span>
-                                <span>• Automação de Processos</span>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section content-section--vanilla" id="filosofia">
-            <div class="page-container section-stack">
-
-                <header class="section-heading">
-                    <div class="section-kicker">
-                        <span class="section-code">SEC_06</span>
-                        <span class="section-label">// PRINCÍPIOS DE ENGENHARIA</span>
-                    </div>
-
-                    <h2 class="section-title">Filosofia &amp; Diretrizes de Trabalho</h2>
-                    <div class="section-rule section-rule--teal"></div>
-
-                    <p class="section-description">
-                        Princípios rigorosos aplicados a cada linha de código,
-                        especificação de banco de dados e arquitetura de integração empresarial.
-                    </p>
-                </header>
-
-                <div class="principles-grid">
-
-                    <article class="principle-card">
-                        <div>
-                            <header class="principle-card__header">
-                                <span class="principle-number principle-number--rust">01</span>
-                                <span class="principle-label">DOMÍNIO REAL</span>
-                            </header>
-
-                            <h3>Entendimento do problema antes da implementação</h3>
-
-                            <p>
-                                O melhor código é aquele que resolve a dor real do negócio com o menor nível
-                                de complexidade acidental. Ir ao posto de trabalho do operador de máquina
-                                vale mais que dez reuniões conceituais.
-                            </p>
-                        </div>
-
-                        <footer>PRAGMATISMO FABRIL</footer>
-                    </article>
-
-                    <article class="principle-card">
-                        <div>
-                            <header class="principle-card__header">
-                                <span class="principle-number principle-number--teal">02</span>
-                                <span class="principle-label">SUSTENTABILIDADE</span>
-                            </header>
-
-                            <h3>Código organizado e previsível</h3>
-
-                            <p>
-                                Padrões explícitos, separação de responsabilidades e documentação técnica
-                                das decisões difíceis para que a equipe de sustentação futura opere
-                                com tranquilidade e autonomia.
-                            </p>
-                        </div>
-
-                        <footer>MAINTAINABILITY FIRST</footer>
-                    </article>
-
-                    <article class="principle-card">
-                        <div>
-                            <header class="principle-card__header">
-                                <span class="principle-number principle-number--accent">03</span>
-                                <span class="principle-label">PERFORMANCE</span>
-                            </header>
-
-                            <h3>Performance de banco consciente</h3>
-
-                            <p>
-                                Índices cirúrgicos, consultas set-based enxutas, respeito aos buffers de memória
-                                e prevenção de locks excessivos. O banco de dados é o coração corporativo.
-                            </p>
-                        </div>
-
-                        <footer>SET-BASED T-SQL</footer>
-                    </article>
-
-                    <article class="principle-card">
-                        <div>
-                            <header class="principle-card__header">
-                                <span class="principle-number">04</span>
-                                <span class="principle-label">ALINHAMENTO</span>
-                            </header>
-
-                            <h3>Integração profunda de negócio</h3>
-
-                            <p>
-                                Fluência imediata na terminologia dos setores de chão de fábrica e administrativo:
-                                lead times de PCP, ordens de produção, apontamentos, impostos retidos e conciliação.
-                            </p>
-                        </div>
-
-                        <footer>LINGUAGEM UBÍQUA</footer>
-                    </article>
-
-                    <article class="principle-card">
-                        <div>
-                            <header class="principle-card__header">
-                                <span class="principle-number principle-number--teal">05</span>
-                                <span class="principle-label">EVOLUÇÃO SEGURA</span>
-                            </header>
-
-                            <h3>Evolução incremental sem ruptura</h3>
-
-                            <p>
-                                Construção de pontes e microsserviços modernos sobre sistemas legados,
-                                preservando anos de regras de negócio validadas dentro do ERP.
-                            </p>
-                        </div>
-
-                        <footer>STRANGLER PATTERN</footer>
-                    </article>
-
-                    <article class="principle-card">
-                        <div>
-                            <header class="principle-card__header">
-                                <span class="principle-number principle-number--rust">06</span>
-                                <span class="principle-label">RESILIÊNCIA</span>
-                            </header>
-
-                            <h3>Software tolerante ao chão de fábrica</h3>
-
-                            <p>
-                                Sistemas industriais precisam suportar quedas momentâneas de rede,
-                                leitores de código de barras imprecisos e digitação rápida de operadores
-                                sem travar ou corromper apontamentos.
-                            </p>
-                        </div>
-
-                        <footer>FACTORY HARDENED</footer>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section" id="contato">
-            <div class="page-container">
-
-                <div class="contact-panel">
-                    <div class="contact-grid">
-
-                        <div class="contact-info">
-                            <div class="contact-availability">
-                                <span class="contact-status-dot"></span>
-                                <span>DISPONIBILIDADE ATUAL</span>
-                            </div>
-
-                            <h2>Vamos construir arquiteturas robustas e eficientes?</h2>
-
-                            <p>
-                                Atualmente disponível para novos desafios em
-                                <strong>Análise de Sistemas Industriais</strong>,
-                                <strong>Engenharia de Software .NET / Blazor</strong>
-                                e projetos de
-                                <strong>Otimização e Tuning de Bancos de Dados SQL Server</strong>.
-                            </p>
-
-                            <div class="contact-direct">
-                                <div class="contact-box">
-                                    <span class="contact-box__label">E-MAIL:</span>
-                                    <span class="contact-box__value">leonardo@larangeira.eng.br</span>
-
-                                    <button
-                                        class="contact-copy-button"
-                                        type="button"
-                                        title="Copiar E-mail"
-                                        data-action="copy-email"
-                                        data-email="leonardo@larangeira.eng.br">
-                                        COPIAR
-                                    </button>
-                                </div>
-
-                                <div class="contact-box">
-                                    <span class="contact-box__label">LOCAL:</span>
-                                    <span class="contact-box__value">São Paulo, SP // Brasil</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="contact-actions">
-                            <a class="brutal-btn contact-action contact-action--primary"
-                               href="#"
-                               data-action="download-cv">
-                                <span class="material-symbols-outlined">file_download</span>
-                                <span>Download CV Executivo (PDF)</span>
-                            </a>
-
-                            <a class="brutal-btn contact-action contact-action--aqua"
-                               href="https://linkedin.com"
-                               rel="noopener noreferrer"
-                               target="_blank">
-                                <span class="material-symbols-outlined">connect_without_contact</span>
-                                <span>Conectar via LinkedIn</span>
-                            </a>
-
-                            <a class="brutal-btn contact-action contact-action--light"
-                               href="https://github.com"
-                               rel="noopener noreferrer"
-                               target="_blank">
-                                <span class="material-symbols-outlined">terminal</span>
-                                <span>Explorar Repositórios GitHub</span>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="portfolio-footer">
-        <div class="page-container footer-stack">
-
-            <div class="footer-grid">
-
-                <div class="footer-brand">
-                    <div class="footer-brand__title">
-                        <div class="footer-mark">LL</div>
-                        <span>LL // Systems Engineering</span>
-                    </div>
-
-                    <p>
-                        Engenharia de software voltada a microsserviços, pipeline de telemetria industrial,
-                        rotinas batch críticas e arquitetura resiliente em ambientes corporativos e fabris.
-                    </p>
-
-                    <div class="footer-statuses">
-                        <span class="footer-status footer-status--teal">NODE // PROD-BR-01</span>
-                        <span class="footer-status">LATÊNCIA: 1.2ms</span>
-                    </div>
-                </div>
-
-                <div class="footer-links">
-                    <span class="footer-heading footer-heading--accent">Repositórios &amp; Perfis</span>
-
-                    <a href="https://github.com" rel="noopener noreferrer" target="_blank">
-                        <span>GitHub Industrial Core</span>
-                        <span>[ext]</span>
-                    </a>
-
-                    <a href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
-                        <span>LinkedIn Corporativo</span>
-                        <span>[ext]</span>
-                    </a>
-
-                    <a href="mailto:contato@larangeira.dev">
-                        <span>contato@larangeira.dev</span>
-                        <span>[mail]</span>
-                    </a>
-                </div>
-
-                <div class="footer-links">
-                    <span class="footer-heading footer-heading--aqua">Artefatos Técnicos</span>
-
-                    <a href="#" data-action="download-cv">Download CV (PDF)</a>
-                    <a href="#estudos-de-caso">Relatórios de Otimização SQL</a>
-                    <a href="#stack">Diagramas de Arquitetura .NET</a>
-                    <a href="#filosofia">Padrões de Confiabilidade</a>
-                </div>
-
-            </div>
-
-            <div class="footer-signature">
-                <span>© 2026 Leonardo Larangeira. Operação Conforme SLAs Industriais.</span>
-
-                <div class="footer-signature__status">
-                    <span>SYS_VER: 4.8.2-LTS</span>
-                    <strong>STATUS: NOMINAL</strong>
-                </div>
-            </div>
-
+        <div class="terminal" aria-label="Resumo técnico em estilo terminal">
+          <div class="window-title"><span>LEONARDO.EXE / PROFILE</span><span class="window-dots">■ □ ×</span></div>
+          <div class="terminal-body">
+            <div><span class="path">C:\PORTFOLIO&gt;</span> <span class="command">whoami</span></div>
+            <div><span class="key">cargo:</span> <span class="val">Analista de Sistemas Júnior</span></div>
+            <div><span class="key">foco:</span> <span class="val">Desenvolvimento & integração</span></div>
+            <div><span class="key">stack:</span> <span class="val">C# · .NET · Blazor · SQL</span></div>
+            <div><span class="key">ambiente:</span> <span class="val">ERP / Operações industriais</span></div>
+            <div class="comment" style="margin:14px 0">// Projetos de verdade. Sem métricas inventadas.</div>
+            <div><span class="path">C:\PORTFOLIO&gt;</span> <span class="command">type objetivos.txt</span></div>
+            <div>Construir soluções úteis, claras e sustentáveis.</div>
+            <div><span class="path">C:\PORTFOLIO&gt;</span> <span class="cursor" aria-hidden="true"></span></div>
+          </div>
         </div>
-    </footer>
-
-    <script src="../portfolio/scripts/scripts.js"></script>
-
+      </div>
+    </section>
+    <section class="section" id="sobre">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-no">01 // PERFIL</div>
+            <h2>Mais do que uma stack.</h2>
+          </div>
+        </div>
+        <p class="section-intro">Minha atuação une programação e entendimento de processos. Costumo trabalhar desde a
+          necessidade apresentada pelo usuário até a consulta ao banco, a implementação da solução e os testes em
+          ambiente corporativo.</p>
+        <div class="grid three">
+          <article class="panel">
+            <div class="panel-header">01 / DESENVOLVIMENTO</div>
+            <div class="panel-content">
+              <h3>Aplicações que resolvem problemas</h3>
+              <p>Desenvolvimento em C#, .NET e Blazor, incluindo interfaces, regras de negócio, geração de PDFs e
+                controle de permissões.</p>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-header aqua">02 / DADOS</div>
+            <div class="panel-content">
+              <h3>SQL além do SELECT</h3>
+              <p>Construção de views, procedures e consultas T-SQL para relatórios, integrações, análises e necessidades
+                operacionais.</p>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-header sand">03 / SISTEMAS</div>
+            <div class="panel-content">
+              <h3>Contexto importa</h3>
+              <p>Experiência com ERP, suporte a usuários e processos de produção, PCP, vendas, qualidade e expedição.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section alt" id="projetos">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-no">02 // TRABALHOS</div>
+            <h2>Projetos selecionados.</h2>
+          </div><span class="tag">APLICAÇÕES & AUTOMAÇÕES</span>
+        </div>
+        <p class="section-intro">Algumas entregas e iniciativas em que trabalhei. As descrições são intencionalmente
+          objetivas; não incluem números de desempenho ou resultados que não tenham sido medidos.</p>
+        <div class="grid two">
+          <article class="panel">
+            <div class="panel-content">
+              <div class="project-top"><span>PRJ_01 // WEB</span><small>Em desenvolvimento / evolução</small></div>
+              <h3>Rastreabilidade e emissão de certificados</h3>
+              <p>Aplicação em Blazor Server para concentrar informações de rastreabilidade, emissão de certificados e
+                capas. Inclui autenticação corporativa, regras de permissão e geração e combinação de PDFs.</p>
+              <div class="highlight">Modernização de um processo anteriormente apoiado em ferramentas e relatórios
+                legados.</div>
+              <div class="chip-row"><span class="chip">C#</span><span class="chip">.NET</span><span class="chip">Blazor
+                  Server</span><span class="chip">Entra ID</span><span class="chip">PDF</span></div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-content">
+              <div class="project-top"><span>PRJ_02 // PRODUÇÃO</span><small>Aplicação interna</small></div>
+              <h3>Dashboard de produção</h3>
+              <p>Telas em Blazor para acompanhar operações de revestimento e desceragem, com consultas ao SQL Server,
+                ordenação, filtros, sinalização de atrasos e atualização manual de informações.</p>
+              <div class="highlight">Informação operacional disponível em uma interface voltada ao acompanhamento da
+                produção.</div>
+              <div class="chip-row"><span class="chip">Blazor</span><span class="chip">SQL Server</span><span
+                  class="chip">C#</span><span class="chip">IIS</span></div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-content">
+              <div class="project-top"><span>PRJ_03 // INTEGRAÇÃO</span><small>Banco de dados</small></div>
+              <h3>Consultas e views para planejamento industrial</h3>
+              <p>Construção de views para disponibilizar dados de pedidos, estoque, roteiros, ordens e apontamentos de
+                produção a uma solução de planejamento. Revisão de consultas e investigação de pontos de desempenho.</p>
+              <div class="highlight">Trabalho focado na consistência e disponibilidade de dados entre sistemas.</div>
+              <div class="chip-row"><span class="chip">T-SQL</span><span class="chip">Views</span><span
+                  class="chip">CTEs</span><span class="chip">SQL Server</span></div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-content">
+              <div class="project-top"><span>PRJ_04 // PCP</span><small>Relatórios e procedimentos</small></div>
+              <h3>Lista de programação de produção</h3>
+              <p>Desenvolvimento de procedure e relatório para organizar informações de etapas produtivas e prioridades,
+                incluindo preparação, montagem, teste e pintura.</p>
+              <div class="highlight">Apoio ao planejamento e à visualização de prioridades de fabricação.</div>
+              <div class="chip-row"><span class="chip">Stored Procedure</span><span class="chip">Crystal
+                  Reports</span><span class="chip">PCP</span></div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-content">
+              <div class="project-top"><span>PRJ_05 // EXPEDIÇÃO</span><small>Relatório industrial</small></div>
+              <h3>Romaneio e etiquetas de expedição</h3>
+              <p>Adaptação e criação de layouts de etiquetas e relatórios de expedição, considerando formatos de
+                impressão e informações provenientes do ERP.</p>
+              <div class="chip-row"><span class="chip">Crystal Reports</span><span class="chip">ERP</span><span
+                  class="chip">Impressão</span></div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-content">
+              <div class="project-top"><span>PRJ_06 // ARQUITETURA</span><small>Em planejamento /
+                  desenvolvimento</small></div>
+              <h3>Portal interno corporativo</h3>
+              <p>Estruturação de uma iniciativa para reunir aplicações internas em uma base .NET/Blazor, com
+                autenticação corporativa e acesso controlado a informações do ERP.</p>
+              <div class="chip-row"><span class="chip">ASP.NET Core</span><span class="chip">Blazor</span><span
+                  class="chip">SQL Server</span><span class="chip">Entra ID</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="tecnologias">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-no">03 // FERRAMENTAS</div>
+            <h2>O que uso no trabalho.</h2>
+          </div>
+        </div>
+        <p class="section-intro">Tecnologias com as quais já trabalhei.</p>
+        <div class="skills-table">
+          <div>Desenvolvimento</div>
+          <div>C#, .NET, ASP.NET Core, Blazor Server, Python, APIs REST</div>
+          <div>Banco de dados</div>
+          <div>SQL Server, T-SQL, views, stored procedures, CTEs, PostgreSQL</div>
+          <div>ERP e processos</div>
+          <div>Protheus / ADVPL, sistemas corporativos, produção, PCP, qualidade e vendas</div>
+          <div>Dados e relatórios</div>
+          <div>Crystal Reports, Power BI, Power Query, Dataflows</div>
+          <div>Plataforma Microsoft</div>
+          <div>Power Apps, Power Automate, SharePoint, Microsoft Entra ID, Active Directory, IIS</div>
+          <div>Ferramentas</div>
+          <div>Git, GitHub, Jira, Monday, GLPI, Postman</div>
+        </div>
+      </div>
+    </section>
+    <section class="section alt" id="experiencia">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-no">04 // TRAJETÓRIA</div>
+            <h2>Experiência profissional.</h2>
+          </div>
+        </div>
+        <div class="experience timeline">
+          <article class="exp-item">
+            <div class="timeline-head">
+              <h3>Analista de Sistemas Júnior</h3><time>JAN/2026 — ATUAL</time>
+            </div>
+            <div class="org">AZ Armaturen do Brasil · Itatiba/SP</div>
+            <p>Desenvolvimento e manutenção de soluções para necessidades internas, trabalhando com sistemas,
+              relatórios, dados e processos industriais.</p>
+            <ul>
+              <li>Aplicações internas em C#, .NET e Blazor.</li>
+              <li>Consultas, views e stored procedures em SQL Server para integração e relatórios.</li>
+              <li>Relatórios em Crystal Reports e apoio a dashboards Power BI.</li>
+              <li>Levantamento de requisitos, testes, homologação e implantação de melhorias.</li>
+            </ul>
+          </article>
+          <article class="exp-item">
+            <div class="timeline-head">
+              <h3>Auxiliar de Suporte Júnior</h3><time>JAN/2025 — JAN/2026</time>
+            </div>
+            <div class="org">Signus Indústria Óptica · Morungaba/SP</div>
+            <p>Suporte a usuários e sistemas corporativos, com participação em investigações de incidentes,
+              administração de acessos e atividades relacionadas ao ERP.</p>
+            <ul>
+              <li>Atendimento e acompanhamento de chamados e troubleshooting.</li>
+              <li>Atuação com Protheus/ADVPL e apoio à análise de dados.</li>
+              <li>Gestão de usuários e permissões com ferramentas Microsoft.</li>
+            </ul>
+          </article>
+          <article class="exp-item">
+            <div class="timeline-head">
+              <h3>Desenvolvedor Júnior · Autônomo</h3><time>AGO/2023 — NOV/2024</time>
+            </div>
+            <div class="org">Projetos remotos</div>
+            <p>Desenvolvimento de serviços e aplicações com Clojure, Python e JavaScript, consumo e criação de APIs
+              REST, bancos relacionais e integrações com serviços AWS.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="formacao">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-no">05 // FORMAÇÃO</div>
+            <h2>Formação & idiomas.</h2>
+          </div>
+        </div>
+        <div class="grid two">
+          <div class="panel">
+            <div class="panel-content">
+              <h3>Análise e Desenvolvimento de Sistemas</h3>
+              <p>Universidade São Francisco · Concluído em 2025</p>
+              <h3 style="margin-top:25px">Tecnologia da Informação</h3>
+              <p>ETEC Rosa Perrone Scavone · Concluído em 2019</p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-content">
+              <h3>Idiomas</h3>
+              <p><strong>Inglês:</strong> avançado — leitura, escrita e conversação.</p>
+              <p><strong>Espanhol:</strong> básico.</p>
+              <div class="chip-row"><span class="chip">Aprendizado contínuo</span><span class="chip">Desenvolvimento
+                  corporativo</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section alt" id="contato">
+      <div class="wrap">
+        <div class="contact">
+          <div>
+            <div class="eyebrow" style="color:var(--aqua)">06 // CONTATO</div>
+            <h2>Tem um projeto ou oportunidade?</h2>
+            <p>Tenho interesse em desenvolvimento C#/.NET, SQL Server, sistemas corporativos e ERP/ADVPL. Estou em
+              Itatiba, SP.</p>
+            <p class="mono" style="font-size:12px;overflow-wrap:anywhere">leonardo.alves.larangeira@gmail.com</p>
+          </div>
+          <div class="contact-links"><a class="btn primary" href="mailto:leonardo.alves.larangeira@gmail.com">Enviar
+              e-mail ↗</a><a class="btn gold" href="https://linkedin.com/in/leonardo-larangeira" target="_blank"
+              rel="noopener noreferrer">LinkedIn ↗</a><button type="button" class="btn" id="copyEmail">Copiar
+              e-mail</button></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footer-inner"><span>© <span id="year">2026</span> Leonardo Larangeira</span><span>Feito com HTML,
+        CSS e um pouco de nostalgia.</span></div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('copyEmail').addEventListener('click', async function () {
+      try { await navigator.clipboard.writeText('leonardo.alves.larangeira@gmail.com'); this.textContent = 'E-mail copiado ✓'; }
+      catch { window.location.href = 'mailto:leonardo.alves.larangeira@gmail.com'; }
+    });
+  </script>
 </body>
-
 
 </html>
